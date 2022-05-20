@@ -53,12 +53,7 @@ const config = {
                 test: /\.css$/i,
                 use: [stylesHandler, {
                     loader: 'css-loader',
-                    // options: {
-                    //     modules: {
-                    //         exportLocalsConvention: "camelCase",
-
-                    //     }
-                    //}
+                    
                 }]
             },
             {
@@ -69,9 +64,6 @@ const config = {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: 'asset/resource',
             },
-
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
         ],
     },
     resolve: {

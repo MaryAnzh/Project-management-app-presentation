@@ -44,7 +44,6 @@ window.addEventListener('load', () => {
 		elem.addEvent();
 	});
 	const iconTVs = document.querySelectorAll('.my-video-img');
-	console.log(iconTVs);
 	iconTVs.forEach(elem => { elem.addEventListener('mouseover', (e) => changTextOnTVOnMouseOver(e)) });
 	iconTVs.forEach(elem => { elem.addEventListener('mouseout', (e) => changTextOnTVOnMouseOut(e)) });
 });
