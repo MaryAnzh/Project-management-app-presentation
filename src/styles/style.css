@@ -1,0 +1,130 @@
+@import '../../node_modules/reveal.js/dist/reveal.css';
+@import '../../node_modules/reveal.js/dist/theme/sky.css';
+@import '../../node_modules/reveal.js/plugin/highlight/monokai.css';
+
+.my-video-wrap {
+width: 300px;
+height: 175px;
+border-radius: 10px;
+position: absolute;
+z-index: 100;
+display: block;
+flex-direction: column;
+padding: 8px;
+pointer-events: all;
+}
+
+.video-close {
+	display: none;
+	position: relative;
+	width: 25px;
+	height: 25px;
+	background: url(../assets/img/cross.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	align-self: flex-end;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: .5;
+}
+
+.video-close:hover {
+	opacity: 1;
+} 
+
+.my-video {
+	position: relative;
+	display: none;
+	align-self: center;
+	border: 1px solid blue;
+	/* border-radius: 10px; */
+}
+
+.my-video-wrap .my-video-img {
+	position: relative;
+	cursor: pointer;;
+}
+
+#iframe-1,
+#iframe-2,
+#iframe-3,
+#iframe-4,
+#iframe-5,
+#iframe-6,
+#iframe-7,
+.cap {
+	display: none;
+}
+
+#video-wrap-1 {
+right: 20px;
+bottom: calc(50% - 95px);
+}
+
+#video-wrap-2,
+#video-wrap-4 {
+right: 0;
+top: 0;
+}
+
+#my-video-img-2,
+#my-video-img-4,
+#my-video-img-7 {
+	margin-left: 50%;
+}
+
+#video-wrap-3 {
+left: 0;
+bottom: calc(50% - 125px);
+}
+#video-wrap-6 {
+	bottom: 0;
+}
+
+#my-video-img-3,
+#my-video-img-6 {
+	margin-left: 0;
+}
+#video-wrap-7 {
+	left: calc(50% - 150px);
+	margin-top: -20px;
+}
+
+.my-cloud {
+	height: 200px;
+	background: url(../assets/img/cloud_2.png);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#cloud-1,
+#cloud-3,
+#cloud-4,
+#cloud-6 {
+	width: 50%;
+	text-align: left;
+}
+
+#cloud-2,
+#cloud-5 {
+	width: 60%;
+	margin-left: 40%;
+	display: flex;
+	justify-items: flex-end;
+	text-align: right;
+}
+
+#my-cloud-2,
+#my-cloud-5 {
+	width: 100%;
+	background-position: right;
+}
+
+.ocean-info {
+	width: 60%;
+	height: 10px;
+	margin-left: 40%;
+	background: white;
+}
