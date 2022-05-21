@@ -1,7 +1,17 @@
+$mainColorDark: #2A4480;
+$mainColorLight: #DEF5F5;
+$mainColor: #446fd5;
+$additionalColor: #2eb1b1;
+$additionalColorLight: #8ddada;
+$gradientDark: #6C8CD5;
+$additionalColorLightPresentation: #b1e7e7;
+
 .slides {
 
   &__1 {
-    background: lightgreen;
+    padding: 10px;
+    background: $additionalColorLightPresentation;
+    border-radius: 10px;
 
     img {
       max-width: 200px;
