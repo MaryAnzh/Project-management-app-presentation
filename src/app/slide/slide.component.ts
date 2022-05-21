@@ -14,7 +14,7 @@ export class SlideComponent implements OnInit {
 
   ngOnInit(): void {
     Reveal.initialize({
-
+      navigationMode: 'linear',
     });
   }
 
