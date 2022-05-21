@@ -1,2 +1,5 @@
-# Project-management-app-presentation
-Presentation for Task Project-management-app, angular
+Template from
+https://github.com/makiyamad/angular-revealjs
+
+Name:
+**Project-management-app-presentation**
