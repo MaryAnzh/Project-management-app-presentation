@@ -7,21 +7,19 @@ import Reveal from 'reveal.js';
   templateUrl: './slide.component.html',
   styleUrls: ['./slide.component.scss']
 })
+
 export class SlideComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit(): void {
+    Reveal.initialize({
+
+    });
   }
 
   ngAfterViewInit(){
-  
-    Reveal.initialize({
-      parallaxBackgroundImage: '',
-      parallaxBackgroundSize: '',
-      parallaxBackgroundHorizontal: 200,
-      parallaxBackgroundVertical: 50
-    })
+
   }
 
 }
