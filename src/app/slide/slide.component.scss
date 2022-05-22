@@ -22,12 +22,8 @@ $additionalColorLightPresentation: #d2f5f5;
   &__3 {
 
     &__visual {
-
-      &__wrap {
-
-        width: 100%;
-        height: 100px;
-        background: #2eb1b1;
+      iframe {
+      border: 2px dashed blue;
       }
     }
   }
