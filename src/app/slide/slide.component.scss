@@ -23,7 +23,28 @@ $additionalColorLightPresentation: #d2f5f5;
 
     &__visual {
       iframe {
-      border: 2px dashed blue;
+        border: 2px dashed blue;
+      }
+    }
+  }
+
+  &__4 {
+
+    &__team {
+
+      &__members-list {
+        list-style: none;
+
+        li {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 130px;
+          }
+        }
       }
     }
   }
