@@ -48,11 +48,23 @@ $additionalColorLightPresentation: #d2f5f5;
       }
     }
 
-    &__RACI-table {
-      table {
-        border: 2px solid blue;
-      }
+    &__communication {
 
+      &__messages {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 35%;
+        }
+      }
+    }
+
+    &__discord {
+      img {
+        height: 600px;
+      }
     }
   }
 }
