@@ -1,11 +1,5 @@
-import { Component } from '@angular/core';
-
-type MatrixRow = {
-  process: '',
-  mari: '',
-  dima: '',
-  margo: '',
-}
+import { Component, Input } from '@angular/core';
+import { IMatrixRow } from 'src/app/model/matrix-row.model';
 
 @Component({
   selector: 'app-raci-matrix',
@@ -14,13 +8,6 @@ type MatrixRow = {
 })
 
 export class RACIMatrixComponent {
-  public matrixArray: MatrixRow[] = [
-    {
-      process: '',
-      mari: '',
-      dima: '',
-      margo: ''
 
-    }
-  ]
+  @Input() public matrixArray: IMatrixRow[] | null = null;
 }

@@ -47,5 +47,12 @@ $additionalColorLightPresentation: #d2f5f5;
         }
       }
     }
+
+    &__RACI-table {
+      table {
+        border: 2px solid blue;
+      }
+
+    }
   }
 }

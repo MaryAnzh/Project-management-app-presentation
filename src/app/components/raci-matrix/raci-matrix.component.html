@@ -1,10 +1,10 @@
-<table class="raci-matrix">
-  <caption class="raci-matrix__title">RACI матрица</caption>
+<table class="raci-matrix"
+*ngIf="matrixArray">
     <tr>
-    <td>Процесс</td>
-    <td>Мария</td>
-    <td>Дмитрий</td>
-    <td>Маргарита</td>
+    <th>Процесс</th>
+    <th>Мария</th>
+    <th>Дмитрий</th>
+    <th>Маргарита</th>
   </tr>
   <tr
   *ngFor="let matrix of matrixArray">

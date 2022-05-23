@@ -39,7 +39,6 @@
           width="320px" height="600px"></iframe>
       </section>
     </section> -->
-
     <!--4-th Slider-->
     <section class="slides__4"
       data-transition="zoom">
@@ -74,7 +73,6 @@
           </li>
         </ul>
       </section> -->
-
       <!-- <section class="slides__4__RACI">
         <h4>RACI матрица</h4>
         <ul>
@@ -84,9 +82,16 @@
           <li>I – Inform after doing (оповещается после исполнения).</li>
         </ul>
       </section> -->
-
-      <section>
-        <app-raci-matrix></app-raci-matrix>
+      <section class="slides__4__RACI-table">
+        <h4>RACI матрица</h4>
+        <app-raci-matrix
+          [matrixArray]="matrixArray"
+          ></app-raci-matrix>
+      </section>
+      <section class="slides__4__RACI-table">
+        <p style="text-align: left; font-size: 24px;">продолжение</p>
+        <app-raci-matrix
+          [matrixArray]="matrixArray2"></app-raci-matrix>
       </section>
 
     </section>

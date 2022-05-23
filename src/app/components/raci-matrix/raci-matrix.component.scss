@@ -1,4 +1,24 @@
 .raci-matrix {
   border-collapse: collapse;
-  border: 2px solid blue;
+
+
+  &__title {
+    padding-bottom: 10px;
+  }
+
+  th {
+    font-size: 24px;
+    border: 1px solid blue;
+  }
+
+  td {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid blue;
+  }
+
+  td:nth-child(1) {
+    width: 400px;
+    text-align: left;
+  }
 }
