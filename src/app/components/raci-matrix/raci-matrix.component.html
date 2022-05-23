@@ -1,0 +1,16 @@
+<table class="raci-matrix">
+  <caption class="raci-matrix__title">RACI матрица</caption>
+    <tr>
+    <td>Процесс</td>
+    <td>Мария</td>
+    <td>Дмитрий</td>
+    <td>Маргарита</td>
+  </tr>
+  <tr
+  *ngFor="let matrix of matrixArray">
+    <td>{{matrix.process}}</td>
+    <td>{{matrix.mari}}</td>
+    <td>{{matrix.dima}}</td>
+    <td>{{matrix.margo}}</td>
+  </tr>
+</table>
