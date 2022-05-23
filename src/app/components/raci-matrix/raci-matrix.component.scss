@@ -1,5 +1,9 @@
+$additionalColorLightPresentation: #d2f5f5;
+$mainColorDark: #2A4480;
+
 .raci-matrix {
   border-collapse: collapse;
+  border: 2px solid $mainColorDark;
 
 
   &__title {
@@ -8,6 +12,7 @@
 
   th {
     font-size: 24px;
+    background: $additionalColorLightPresentation;
     border: 1px solid blue;
   }
 
