@@ -20,6 +20,33 @@ $additionalColorLightPresentation: #d2f5f5;
   }
 
   &__3 {
+    &__architecture {
+      &__app {
+        list-style: none;
+
+        &__list {
+          &__lists {
+            list-style: none;
+
+            li {
+              display: flex;
+              align-items: center;
+
+              p {
+                padding: {
+                  right: 10px;
+                  top: 0;
+                  bottom: 0;
+                };
+                margin: 0;
+
+              }
+            }
+
+          }
+        }
+      }
+    }
 
     &__visual {
       iframe {
@@ -102,13 +129,11 @@ $additionalColorLightPresentation: #d2f5f5;
         color: red;
       }
     }
-
-    // &__pr {
-    //   &__wrap {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-between;
-    //   }
-    // }
   }
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
