@@ -67,4 +67,40 @@ $additionalColorLightPresentation: #d2f5f5;
       }
     }
   }
+
+  &__5 {
+    &__teh {
+      &__scss {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          color: red;
+          font-size: 100px;
+        }
+      }
+
+      &__lib {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          color: red;
+          font-size: 70px;
+        }
+      }
+
+
+
+    }
+
+    &__commits {
+      &__number {
+        font-size: 40px;
+        color: red;
+      }
+    }
+  }
 }
