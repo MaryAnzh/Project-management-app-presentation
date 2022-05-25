@@ -1,6 +1,4 @@
 
-
-
 declare module "reveal.js" {
   export default Reveal;
 

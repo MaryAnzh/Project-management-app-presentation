@@ -57,21 +57,28 @@
           src="https://project-management-app-bece7.web.app/welcome"
           width="320px" height="600px"></iframe>
       </section> -->
-      <section slides__3__auth>
+      <!-- <section slides__3__auth>
         <h5>Страница Входа и Регистрации</h5>
         <div class="wrap">
           <img src="assets/login-form.png" alt="login-">
           <img src="assets/reg-form.png" alt="Registration">
-          <div>
-            <p>Пример кода</p>
-            <pre><code  data-line-numbers="3">
-  "let a = 1;
-  let b = 2;
-  let c = 6;"
-
-</code></pre>
-          </div>
         </div>
+      </section> -->
+      <section>
+        <p>Листинг кода</p>
+        <pre><code data-line-numbers>{{Пример:
+
+   this.loginForm = new FormGroup({
+      email: new FormControl('', [
+        Validators.email,
+        Validators.required]),
+      password: new FormControl(null, [
+        Validators.required
+      ]),
+    });
+  }
+</code></pre>
+
       </section>
     </section>
 
