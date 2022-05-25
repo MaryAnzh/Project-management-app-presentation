@@ -1,5 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import Reveal from 'reveal.js';
+//работает, если раскоментировать подключение в reavek.d.ts
+// import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+// import Highlight from 'reveal.js/plugin/highlight/highlight.esm.js';
 import { IMatrixRow } from '../model/matrix-row.model';
 
 @Component({
@@ -48,7 +51,7 @@ export class SlideComponent implements OnInit {
       margo: ''
     },
     {
-      process: 'Подключение лингво библиотеки, перевод сайта',
+      process: 'Подулючение лингво библиотеки, перевод сайта',
       mari: '',
       dima: 'RA',
       margo: ''
@@ -147,7 +150,7 @@ export class SlideComponent implements OnInit {
   ngOnInit(): void {
     Reveal.initialize({
       navigationMode: 'grid',
-
+      //plugins: [Highlight],
     });
   }
 
