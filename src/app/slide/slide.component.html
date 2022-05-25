@@ -23,7 +23,7 @@
       data-state="make-it-pop"
       data-transition="zoom">
 
-      <section slides__3__title>
+      <!-- <section slides__3__title>
         <h3>Результат командной работы</h3>
       </section>
 
@@ -119,172 +119,261 @@ src\app\project-management\pages\board\board.component.html
          </code></pre>
 
       </section>
-
-
-
-    </section>
-
-    <section data-state="make-it-pop"
-      data-transition="zoom"
-      data-transition-speed="slow">
-      <h3>Организация командной работы</h3>
-    </section>
-
-    <!--4-th Slider-->
-    <section class="slides__4"
-      data-state="make-it-pop"
-      data-transition="zoom"
-      data-transition-speed="slow">
-
-      <section class="slides__4__team">
-        <h4>Наша команда</h4>
-        <ul class="slides__4__team__members-list">
-          <li class="fragment fade-left">
-            <img src="assets/mari.png" alt="mari">
-            <div>
-              <h5>Мария</h5>
-              <a
-                href="https://github.com/MaryAnzh"
-                target="_blank">
-                https://github.com/MaryAnzh</a>
-            </div>
-          </li>
-          <li class="fragment fade-right">
-            <div>
-              <h5>Дмитрий</h5>
-              <a
-                href="https://github.com/Mowgle88"
-                target="_blank">
-                https://github.com/Mowgle88</a>
-            </div>
-            <img src="assets/dima.png" alt="dima">
-          </li>
-
-          <li class="fragment fade-left">
-            <img src="assets/margo.png" alt="margo">
-            <div>
-              <h5>Маргарита</h5>
-              <a
-                href="https://github.com/margoroma"
-                target="_blank">
-                https://github.com/margoroma</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="slides__4__RACI">
-        <h4>RACI матрица</h4>
-        <ul>
-          <li>R – Responsible (исполняет)</li>
-          <li>A – Accountable (несет ответственность);</li>
-          <li>C – Consult before doing (консультирует до исполнения)</li>
-          <li>I – Inform after doing (оповещается после исполнения).</li>
-        </ul>
-      </section>
-      <section class="slides__4__RACI-table">
-        <h4>RACI матрица</h4>
-        <app-raci-matrix
-          [matrixArray]="matrixArray"></app-raci-matrix>
-      </section>
-      <section class="slides__4__RACI-table">
-        <p style="text-align: left; font-size: 24px;">продолжение</p>
-        <app-raci-matrix
-          [matrixArray]="matrixArray2"></app-raci-matrix>
-      </section>
-      <section class="slides__4__trallo">
-        <h5>Trello</h5>
-        <h6>1 неделя</h6>
-        <img src="assets/trelllo-1.png" alt="trello">
-      </section>
-      <section class="slides__4__trallo">
-        <h6>2 неделя</h6>
-        <img src="assets/trelllo-2.png" alt="trello">
-      </section>
-      <section class="slides__4__trallo">
-        <h6>3 неделя</h6>
-        <img src="assets/trelllo-3.png" alt="trello">
-        <a
-          href="https://trello.com/b/9WzvPWo7/%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F-3-project-management-app">ссылка</a>
-      </section>
-      <section class="slides__4__communication">
-        <h4>Общение</h4>
-
-        <div class="slides__4__communication__messages">
-          <img src="assets/Skype_logo.svg" alt="Skype">
-          <img src="assets/discord-logo.png" alt="discord">
-        </div>
-      </section>
-      <section class="slides__4__discord">
-        <img src="assets/discord.png" alt="discord">
-      </section>
-      <section class="slides__4__difficulties">
-        <h3>Сложности</h3>
-        <p class="fragment fade-up">Сложности в общении решались тем, что
-          команда всегда была на связи. Не было ни одного дня без общения</p>
-      </section>
-    </section>
-
-    <!--5-th Slider-->
-    <section data-state="make-it-pop"
-      data-transition="zoom"
-      data-transition-speed="slow">
-      <h4>Особенности технической реализации проекта и его репозиторий</h4>
-    </section>
-
-    <section class="slides__5"
-      data-state="make-it-pop"
-      data-transition="zoom"
-      data-transition-speed="slow">
-
-      <section class="slides__5__teh">
-        <h5>Особенности технической реализации</h5>
-        <div class="slides__5__teh__scss">
-          <p class="fragment fade-left">SCSS</p>
-          <p class="fragment fade-right">BEM</p>
-        </div>
-        <div class="slides__5__teh__lib">
-          <p class="fragment fade-left">Angular i18n</p>
-          <p class="fragment fade-right">Angular Material</p>
-        </div>
-      </section>
-
-      <section class="slides__5__commits">
-        <h5>история коммитов</h5>
-        <h6 class="fragment fade-up">"This branch is <span
-            class="slides__5__commits__number">322</span> commits ahead, 3
-          commits behind main".</h6>
-        <img class="fragment fade-up" src="assets/commits.png" alt="commits"
-          height="500px">
-      </section>
-
-      <section class="slides__5__pr">
-
-        <h5>примеры PR</h5>
-        <img class="fragment fade-down" src="assets/pr-01.png" alt="pr">
-      </section>
-      <section
-        data-transition="zoom"
-        data-transition-speed="slow">
-        <img src="assets/pr-02.png" alt="pr">
-      </section>
-
       <section>
-        <h5>технические сложности</h5>
-        <ul>
-          <li class="fragment fade-right">
-            Диплой бекэнда
-          </li>
-          <li class="fragment fade-left">
-            Диплой приложения на Github
-          </li>
-          <li class="fragment fade-left">
-            Ошибка 500 при создании коонки
-          </li>
-        </ul>
+        <h5>Смена заголовка</h5>
+        <img class="fragment fade-down" src="assets/board-03.png" alt="board">
+        <div class="wrap">
+
+          <img class="fragment fade-down" src="assets/board-04.png" alt="board">
+          <img class="fragment fade-down" src="assets/board-05.png" alt="board">
+        </div>
+        <div class="wrap">
+          <pre width="40%"><code>
+    Листинг кода
+          {{"
+        \<input
+        #boardTitle
+        value=\"\{\{boardInfo.title\}\}\"
+        (focus)=\"makeButtonVisible()\"
+        (blur)=\"makeButtonHidden()\"\>
+          "}}
+        </code></pre>
+          <pre width="60%"><code>
+          {{"
+\<button class=\"hidden-button\"
+  *ngIf=\"isTitleChange\"
+  (click)=
+ \"changeTitleOnClick(boardTitle.value)\"\>
+          "}}
+        </code></pre>
+        </div>
+
+      </section>-->
+      <section>
+        <h5>Confirm the action</h5>
+        <img width="200px" src="../../assets/Confirm the action.png" alt="Confirm modal">
+        <pre><code style="font-size: 18px;">
+          Листинг кода
+  src\app\core\components\confirmation-modal\
+  confirmation-modal.component.ts
+          {{"
+  13          confirmClick = new Function;
+  14
+  15          cancelClick = new Function;
+  ...
+  21          this.confirmClick = this.coreDataService.confirmClick;
+  22          this.cancelClick = this.coreDataService.cancelClick;
+  ...
+45       async openConfirmationModal() {
+46       this._isConfirmationModalOpen$$.next(true);
+47       return this.showAsync();
+48     }
+          "}}
+        </code></pre>
       </section>
-    </section>
-    <section>
-      <h3>Заключение</h3>
-    </section>
-  </div>
-</div>
+      <section>
+        <pre><code style="font-size: 18px;">
+          Листинг кода
+          src\app\core\services\coreData\core-data.service.ts
+          {{"
+   public showAsync(data = null) {
+    return new Promise<\any\>((resolve, reject) => {
+      this.confirmClick = () => {
+        this.closeConfirmationModal();
+        resolve(data);
+      };
+      this.cancelClick = () => {
+        this.closeConfirmationModal();
+        reject(data);
+      }
+    })
+          "}}
+        </code></pre>
+      </section>
+      <section>
+        <pre><code style="font-size: 18px;">
+Листинг кода
+src\app\project-management\services\PMData\pmdata.service.ts
+{{"
+showConfirmationModal(name: string, columnID?: string, taskID?: string): void {
+    const column = columnID ? columnID : '';
+    const task = taskID ? taskID : '';
+    const res = this.coreDataService.openConfirmationModal().then(() => {
+      switch (name) {
+        case 'board':
+          this.deleteBoard(this.currentBoard.id);
+          break;
+        ...
+243      .catch(() => {
+244
+245      })
+          "}}
+        </code></pre>
+      </section>
+
+        </section>
+
+        <section data-state="make-it-pop"
+          data-transition="zoom"
+          data-transition-speed="slow">
+          <h3>Организация командной работы</h3>
+        </section>
+
+        <!--4-th Slider-->
+        <section class="slides__4"
+          data-state="make-it-pop"
+          data-transition="zoom"
+          data-transition-speed="slow">
+
+          <section class="slides__4__team">
+            <h4>Наша команда</h4>
+            <ul class="slides__4__team__members-list">
+              <li class="fragment fade-left">
+                <img src="assets/mari.png" alt="mari">
+                <div>
+                  <h5>Мария</h5>
+                  <a
+                    href="https://github.com/MaryAnzh"
+                    target="_blank">
+                    https://github.com/MaryAnzh</a>
+                </div>
+              </li>
+              <li class="fragment fade-right">
+                <div>
+                  <h5>Дмитрий</h5>
+                  <a
+                    href="https://github.com/Mowgle88"
+                    target="_blank">
+                    https://github.com/Mowgle88</a>
+                </div>
+                <img src="assets/dima.png" alt="dima">
+              </li>
+
+              <li class="fragment fade-left">
+                <img src="assets/margo.png" alt="margo">
+                <div>
+                  <h5>Маргарита</h5>
+                  <a
+                    href="https://github.com/margoroma"
+                    target="_blank">
+                    https://github.com/margoroma</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="slides__4__RACI">
+            <h4>RACI матрица</h4>
+            <ul>
+              <li>R – Responsible (исполняет)</li>
+              <li>A – Accountable (несет ответственность);</li>
+              <li>C – Consult before doing (консультирует до исполнения)</li>
+              <li>I – Inform after doing (оповещается после исполнения).</li>
+            </ul>
+          </section>
+          <section class="slides__4__RACI-table">
+            <h4>RACI матрица</h4>
+            <app-raci-matrix
+              [matrixArray]="matrixArray"></app-raci-matrix>
+          </section>
+          <section class="slides__4__RACI-table">
+            <p style="text-align: left; font-size: 24px;">продолжение</p>
+            <app-raci-matrix
+              [matrixArray]="matrixArray2"></app-raci-matrix>
+          </section>
+          <section class="slides__4__trallo">
+            <h5>Trello</h5>
+            <h6>1 неделя</h6>
+            <img src="assets/trelllo-1.png" alt="trello">
+          </section>
+          <section class="slides__4__trallo">
+            <h6>2 неделя</h6>
+            <img src="assets/trelllo-2.png" alt="trello">
+          </section>
+          <section class="slides__4__trallo">
+            <h6>3 неделя</h6>
+            <img src="assets/trelllo-3.png" alt="trello">
+            <a
+              href="https://trello.com/b/9WzvPWo7/%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F-3-project-management-app">ссылка</a>
+          </section>
+          <section class="slides__4__communication">
+            <h4>Общение</h4>
+
+            <div class="slides__4__communication__messages">
+              <img src="assets/Skype_logo.svg" alt="Skype">
+              <img src="assets/discord-logo.png" alt="discord">
+            </div>
+          </section>
+          <section class="slides__4__discord">
+            <img src="assets/discord.png" alt="discord">
+          </section>
+          <section class="slides__4__difficulties">
+            <h3>Сложности</h3>
+            <p class="fragment fade-up">Сложности в общении решались тем, что
+              команда всегда была на связи. Не было ни одного дня без общения</p>
+          </section>
+        </section>
+
+        <!--5-th Slider-->
+        <section data-state="make-it-pop"
+          data-transition="zoom"
+          data-transition-speed="slow">
+          <h4>Особенности технической реализации проекта и его репозиторий</h4>
+        </section>
+
+        <section class="slides__5"
+          data-state="make-it-pop"
+          data-transition="zoom"
+          data-transition-speed="slow">
+
+          <section class="slides__5__teh">
+            <h5>Особенности технической реализации</h5>
+            <div class="slides__5__teh__scss">
+              <p class="fragment fade-left">SCSS</p>
+              <p class="fragment fade-right">BEM</p>
+            </div>
+            <div class="slides__5__teh__lib">
+              <p class="fragment fade-left">Angular i18n</p>
+              <p class="fragment fade-right">Angular Material</p>
+            </div>
+          </section>
+
+          <section class="slides__5__commits">
+            <h5>история коммитов</h5>
+            <h6 class="fragment fade-up">"This branch is <span
+                class="slides__5__commits__number">322</span> commits ahead, 3
+              commits behind main".</h6>
+            <img class="fragment fade-up" src="assets/commits.png" alt="commits"
+              height="500px">
+          </section>
+
+          <section class="slides__5__pr">
+
+            <h5>примеры PR</h5>
+            <img class="fragment fade-down" src="assets/pr-01.png" alt="pr">
+          </section>
+          <section
+            data-transition="zoom"
+            data-transition-speed="slow">
+            <img src="assets/pr-02.png" alt="pr">
+          </section>
+
+          <section>
+            <h5>технические сложности</h5>
+            <ul>
+              <li class="fragment fade-right">
+                Диплой бекэнда
+              </li>
+              <li class="fragment fade-left">
+                Диплой приложения на Github
+              </li>
+              <li class="fragment fade-left">
+                Ошибка 500 при создании коонки
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>Заключение</h3>
+        </section>
+      </div>
+    </div>
