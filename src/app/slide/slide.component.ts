@@ -149,7 +149,7 @@ export class SlideComponent implements OnInit {
   ngOnInit(): void {
     Reveal.initialize({
       navigationMode: 'grid',
-      plugins: [Highlight],
+      //plugins: [Highlight],
     });
   }
 

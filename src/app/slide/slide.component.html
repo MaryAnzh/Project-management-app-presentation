@@ -56,30 +56,72 @@
         <iframe
           src="https://project-management-app-bece7.web.app/welcome"
           width="320px" height="600px"></iframe>
-      </section> -->
-      <!-- <section slides__3__auth>
+      </section>
+      <section slides__3__auth>
         <h5>Страница Входа и Регистрации</h5>
         <div class="wrap">
           <img src="assets/login-form.png" alt="login-">
           <img src="assets/reg-form.png" alt="Registration">
         </div>
-      </section> -->
+      </section>
       <section>
         <p>Листинг кода</p>
-        <pre><code data-line-numbers>{{Пример:
+        <pre><code data-line-numbers>
+src\app\auth\pages\login-page\login-page.component.ts
 
-   this.loginForm = new FormGroup({
-      email: new FormControl('', [
-        Validators.email,
-        Validators.required]),
-      password: new FormControl(null, [
-        Validators.required
-      ]),
-    });
-  }
+{{"
+45  this.loginForm = new FormGroup({
+46    email: new FormControl('', [
+47      Validators.email,
+48      Validators.required]),
+49    password: new FormControl(null, [
+50      Validators.required
+51    ]),
+52  });
+  "}}
 </code></pre>
 
       </section>
+
+      <section>
+        <h5>Main роут</h5>
+        <img src="../../assets/main.png" alt="Main роут">
+      </section>
+      <section>
+        <p>Листинг кода</p>
+        <pre><code data-line-numbers>
+src\app\project-management\project-management.component.ts
+
+{{"
+14   public boardInfo$: SubscriptionLike;
+15
+16   public boardInfo: IBoardData[] | null = null;
+...
+24   this.boardInfo$ = this.boardsService.allBoards$.subscribe(
+25     (data) => this.boardInfo = data)
+...
+32   ngOnInit():void {
+33    this.boardsService.getAllBoards();
+34  }
+  "}}
+</code></pre>
+      </section>-->
+      <section>
+         <h5>Board роут</h5>
+         <img class="fragment fade-down" src="assets/board-01.png" alt="board">
+         <img class="fragment fade-down" src="assets/board-02.png" alt="board">
+
+         <pre class="fragment fade-down"><code data-line-numbers>
+src\app\project-management\pages\board\board.component.html
+
+        {{"[ngClass]=\"{'vusible': (columns && columns.length> 0), 'hidden':
+        !(columns && columns.length > 0)}\""}}
+         </code></pre>
+
+      </section>
+
+
+
     </section>
 
     <section data-state="make-it-pop"
