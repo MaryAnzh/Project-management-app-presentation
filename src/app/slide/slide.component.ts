@@ -150,6 +150,10 @@ export class SlideComponent implements OnInit {
   ngOnInit(): void {
     Reveal.initialize({
       navigationMode: 'grid',
+      //при аодключении работает, но код надо писапть начиная с {{, при этом
+      //они видны при визуализации кода, что выглядит не очень красиво
+      //Пример <pre><code>{{ код </code></pre>
+      // т.е какой то касяу с разметкой
       //plugins: [Highlight],
     });
   }
