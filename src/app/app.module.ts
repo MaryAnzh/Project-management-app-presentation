@@ -10,7 +10,7 @@ import { RACIMatrixComponent } from './components/raci-matrix/raci-matrix.compon
   declarations: [
     AppComponent,
     SlideComponent,
-    RACIMatrixComponent
+    RACIMatrixComponent,
   ],
   imports: [
     BrowserModule,
