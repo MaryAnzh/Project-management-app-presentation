@@ -48,7 +48,7 @@ export class SlideComponent implements OnInit {
       margo: ''
     },
     {
-      process: 'Подулючение лингво библиотеки, перевод сайта',
+      process: 'Подключение лингво библиотеки, перевод сайта',
       mari: '',
       dima: 'RA',
       margo: ''
@@ -135,7 +135,7 @@ export class SlideComponent implements OnInit {
       margo: ''
     },
     {
-      process: 'Диплой приложения',
+      process: 'Деплой приложения',
       mari: 'RA',
       dima: '',
       margo: ''

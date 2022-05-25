@@ -16,7 +16,7 @@
         <li class="fragment fade-up">Организация командной работы</li>
         <li class="fragment fade-up">Особенности технической реализации проекта
           и его репозиторий</li>
-        <li class="fragment fade-up">Заключение</li>
+
       </ul>
     </section>
 
@@ -25,7 +25,7 @@
       data-state="make-it-pop"
       data-transition="zoom">
 
-      <!-- <section slides__3__title>
+      <section slides__3__title>
         <h3>Результат командной работы</h3>
       </section>
 
@@ -87,37 +87,63 @@ src\app\auth\pages\login-page\login-page.component.ts
 
       <section>
         <h5>Main роут</h5>
-        <img src="../../assets/main.png" alt="Main роут">
+        <img src="assets/main.png" alt="Main роут">
       </section>
       <section>
         <p>Листинг кода</p>
         <pre><code data-line-numbers>
-src\app\project-management\project-management.component.ts
+src\app\project-management\services\boardService\boards.service.ts
 
 {{"
-14   public boardInfo$: SubscriptionLike;
-15
-16   public boardInfo: IBoardData[] | null = null;
+14      private _allBoards$$ = new Subject\<IBoardData[] | null\>();
+
+16      public allBoards$ = this._allBoards$$.asObservable();
 ...
-24   this.boardInfo$ = this.boardsService.allBoards$.subscribe(
-25     (data) => this.boardInfo = data)
+26     getAllBoards():void {
+27       this.requestService.getBoards().subscribe({
+28         next: (response: IBoardData[]) => {
+29         this._allBoards$$.next(response);
+30       },
+31         error: (error: HttpErrorResponse) => console.error(error),
+32      })
+33     }
 ...
-32   ngOnInit():void {
-33    this.boardsService.getAllBoards();
-34  }
+64      onDistroy(): void {
+65        if (this._allBoards$$) {
+66          this._allBoards$$.unsubscribe();
+66        }
+67     }
   "}}
 </code></pre>
       </section>
-      <section>
+            <section>
          <h5>Board роут</h5>
+         <p style="font-size: 24px;">/main/board/<span style="color: red; font-size: 30px;">3e054eee-4e8f-4647-b769-1d882c59bb7c</span></p>
+
+
+         <pre class="fragment fade-down"><code data-line-numbers>
+src\app\project-management\pages\board\board.component.html
+
+        {{"
+    const id = this.route.snapshot.paramMap.get('id');
+    this.boardId = id;
+    if (id) {
+      this.pmDataService.getBoard(id);
+    }
+        "}}
+         </code></pre>
+
+      </section>
+      <section>
+         <h5>Board кнопки</h5>
          <img class="fragment fade-down" src="assets/board-01.png" alt="board">
          <img class="fragment fade-down" src="assets/board-02.png" alt="board">
 
          <pre class="fragment fade-down"><code data-line-numbers>
 src\app\project-management\pages\board\board.component.html
 
-        {{"[ngClass]=\"{'vusible': (columns && columns.length> 0), 'hidden':
-        !(columns && columns.length > 0)}\""}}
+        {{"[ngClass]=\"{'vusible': (columns && columns.length> 0),
+        'hidden': !(columns && columns.length > 0)}\""}}
          </code></pre>
 
       </section>
@@ -150,7 +176,8 @@ src\app\project-management\pages\board\board.component.html
         </code></pre>
         </div>
 
-      </section>-->
+      </section>
+
       <section>
         <h5>Confirm the action</h5>
         <img width="200px" src="../../assets/Confirm the action.png" alt="Confirm modal">
@@ -363,10 +390,10 @@ showConfirmationModal(name: string, columnID?: string, taskID?: string): void {
             <h5>технические сложности</h5>
             <ul>
               <li class="fragment fade-right">
-                Диплой бекэнда
+                Деплой бекэнда
               </li>
               <li class="fragment fade-left">
-                Диплой приложения на Github
+                Деплой приложения на Github
               </li>
               <li class="fragment fade-left">
                 Ошибка 500 при создании коонки
@@ -375,7 +402,7 @@ showConfirmationModal(name: string, columnID?: string, taskID?: string): void {
           </section>
         </section>
         <section>
-          <h3>Заключение</h3>
+          <h3>Спасибо за внимание</h3>
         </section>
       </div>
     </div>
